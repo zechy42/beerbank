@@ -1,0 +1,73 @@
+<div class='containter' style="padding: 40px 8% 40px 8%">
+    <div class='row'>
+
+      <div class="col-xs-12 col-sm-6 col-md-4 holder" *ngFor="let beer of beers">
+
+          <div class='beer-card' (click)="divClick(beer)">
+            <div class='right-content'>
+                <i class="fav fa fa-star" id='fav{{beer.id}}' (click)="favClick($event, beer)"></i>
+            </div>
+                  <img src="{{beer.image_url}}" height="150px;">
+                  <h2><b>{{beer.name}}</b></h2>
+                  <h5>{{beer.tagline}}</h5>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <button data-toggle='modal' data-target='#beerDetail' id="detailTrigger" style='display: none;'></button>
+
+  <div *ngIf='beerForDetail' class="modal fade" id="beerDetail" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button id="modalDismiss1" type="button" class="close" style="color: red;" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div class='row' style='padding: 0 15px 0 15px;'>
+                  <div style='width: 25%;'>
+                      <img src="{{beerForDetail.image_url}}" width="100%;">
+                  </div>
+                  <div style='width: 75%;'>
+                    <div style='padding-left: 20px;'>
+                      <h1>{{beerForDetail.name}}</h1>
+                      <h6>{{beerForDetail.tagline}}</h6>
+                      <div class='hrdiv'></div>
+                      <div>
+                        <span>
+                            <b>IBU:</b>{{beerForDetail.ibu}} &nbsp; <b>ABV:</b>{{beerForDetail.abv}} &nbsp; <b>EBC:</b>{{beerForDetail.ebc}}
+                        </span>
+                        <div>
+                          {{beerForDetail.description}}
+                        </div>
+                        <br>
+                        <div>
+                          <b>Best Served With</b>
+                          <ul>
+                            <li *ngFor="let with of beerForDetail.food_pairing">{{with}}</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class='row' style='padding: 20px;'>
+                    <div style='width: 100%;'>
+                      <h1>You might also like</h1>
+                    </div>
+                    <div style='width: 33%; text-align: center;' *ngFor='let s of similar'>
+                        <img src="{{s.image_url}}" height="150px;">
+                        <h6><b>{{s.name}}</b></h6>
+                    </div>
+                </div>
+
+              </div>
+          </div>
+      </div>
+  </div>

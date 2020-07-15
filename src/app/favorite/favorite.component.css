@@ -1,0 +1,60 @@
+.beer-card{
+  text-align: center;
+  background-color: white;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 0 7px 2px #ccc;
+  transition: box-shadow 0.4s;
+}
+
+.beer-card:hover{
+  box-shadow: 0 0 8px 5px #aaa;
+}
+
+.holder{
+  padding: 10px 20px 20px 20px;
+}
+
+h2{
+  padding: 20px 5px 10px 5px;
+  color: #ff9700;
+}
+
+h5{
+  padding: 3px 5px 50px 5px;
+  color: #888;
+}
+
+h1{
+  font-size: 1.6em;
+  padding: 0 5px 10px 0;
+  color: #ff9700;
+}
+
+h6{
+  padding: 3px 5px 0 0;
+  color: #888;
+  font-size: 1em;
+}
+
+.fav{
+  color: #ff9700;
+  cursor: pointer;
+}
+
+.right-content{
+  width: 100%;
+  text-align: right;
+}
+
+.hrdiv {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 30%;
+  border-top: 5px solid purple;
+}
+
+.modal-body {
+  color: #777;
+}
+

@@ -1,0 +1,26 @@
+.primary{
+  background-color: #ff9700;
+}
+
+.bigger{
+  font-size: 1.1em;
+}
+
+#top-header {
+  width: 100%;
+  background-color: #ff9700;
+  top: 0;
+  position: fixed;
+  z-index:999;
+  text-align: right;
+  padding: 15px 50px 15px 0;
+}
+/* mat-toolbar {
+  top: 0;
+  position: fixed;
+  z-index:999;
+} */
+
+a{
+  color: azure;
+}

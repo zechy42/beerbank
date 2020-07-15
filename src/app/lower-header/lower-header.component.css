@@ -1,0 +1,43 @@
+#title{
+  width: 100%;
+  text-align: center;
+}
+
+#title2{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#mainSearch{
+  width: 300px;
+}
+
+.primary{
+  background-color: #ff9700;
+}
+
+.bigger{
+  font-size: 1.1em;
+}
+
+#lower-header {
+  width: 100%;
+  background-color: #ff9700;
+  text-align: center;
+  padding: 15px 50px 30px 0;
+}
+
+#mainSearch{
+  padding: 6px;
+}
+/* mat-toolbar {
+  top: 0;
+  position: fixed;
+  z-index:999;
+} */
+
+a{
+  color: azure;
+}
+
